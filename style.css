@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: hsl(90, 3%, 12%);
+  color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 200px;
+}
+
+#maze {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 2px;
+  margin: 20px auto;
+  position: absolute;
+  left: 45%;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.wall {
+  background-color: #333;
+}
+
+.cell.start {
+  background-color: #4CAF50;
+}
+
+.cell.end {
+  background-color: #f44336;
+}
+
+.cell.path {
+  background-color: #ffc107;
+}
+
+.btn-container {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#findPath {
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#findPath:hover {
+    background-color: skyblue;
+    color: darkblue;
+}
+
+#reset {
+    border: none;
+    padding: 10px;
+    background-color: rgb(146, 1, 1);
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#reset:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
